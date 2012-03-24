@@ -27,6 +27,6 @@ module Helpers
       </script>
       <!-- End of Google Website Optimizer Tracking Script -->
     HTML
-    return js
+    return js.html_safe
   end
 end
