@@ -55,13 +55,25 @@ module Helpers
   # should be placed immediately before the closing </head> tag on
   # your conversion page.
   #
-  # Next, you'll need to add a snippet of text to the link or links that you want to track as a conversion. Let's say your link looks like this:
+  # Next, you'll need to add a snippet of text to the link or links
+  #  that you want to track as a conversion. Let's say your link
+  #  looks like this:
   # 
   # <a href="http://www.example.com/promotion">Featured Products</a>
   #
-  # To count a conversion when this link is clicked, add onclick="doGoal(this);return false;" to the HTML tag. The new link will look like this (addition in bold):
+  # To count a conversion when this link is clicked, add:
+  #
+  # onclick="doGoal(this);return false;"
+  #
+  # to the HTML tag. The new link will look like this
+  # (addition in bold):
   #
   # <a href="http://www.example.com/promotion" onclick="doGoal(this);return false;">Featured Products</a>
+  #
+  # You can modify as many links as you want to count as a conversion,
+  # but all of them will be counted identically as conversions in your
+  # experiment results. In other words, Website Optimizer will not
+  # differentiate between them when reporting conversions.
   #
   ####################################################################
 
