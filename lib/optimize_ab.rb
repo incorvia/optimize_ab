@@ -1,4 +1,4 @@
 require "optimize_ab/version"
 require "optimize_ab/helpers"
 
-ActionView::Send :include, Helpers
+ActionView::Base.send :include, Helpers
