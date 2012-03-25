@@ -12,10 +12,19 @@ The tracking script goes on your test page ensures that visits to the page are r
 
 The control script immediately after the head tag.
 
-    mv_head(k, ua, pv)
+    mv_head(k, ua, pv, gv)
 
-Arguements can be taken directly form the Google Optimize Website Script code
+k: the value listed in the control script: 
 
+    {var k="#{k}" # Example: 262340015
+
+ua: the Account number listed in control script:
+
+    _gaq.push(['gwo._setAccount', 'ua']); # Example: UA-46835225-6
+
+pv: the track page view link listed in control script:
+
+    _gaq.push(['gwo._trackPageview', '/pv/test']); # Example: 6234623
 
 Multi-Variate Page Sections Scripts
 ---------------------------------------

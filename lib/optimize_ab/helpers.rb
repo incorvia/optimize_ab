@@ -18,10 +18,10 @@ module Helpers
       <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['gwo._setAccount', "#{ua}"]);
-        _gaq.push(['gwo._trackPageview', "#{pv}"]);
+        _gaq.push(['gwo._trackPageview', "#{'/' + pv.to_s + '/test'}"]);
         function doGoal(that) {
          try {
-          _gaq.push(['gwo._trackPageview', "#{pv}"]);
+          _gaq.push(['gwo._trackPageview', "#{'/' + pv.to_s + '/goal'}"]);
           setTimeout('document.location = "' + that.href + '"', 100)
          }
          catch(err){}
