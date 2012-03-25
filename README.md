@@ -47,9 +47,10 @@ in HAML a link might be written as:
     = link_to (mv_begin_section('Headline') + "Welcome" + mv_end_section)
 
 
-OnClick Conversion
+Conversions Javascript function
 ---------------------------------------
-You'll need to add a snippet of text to the link or links
+Conversions are initiated via a javascript function 'doGoal'
+You'll need to add a snippet of text to the link / links
 that you want to track as a conversion. Let's say your link
 looks like this:
 
