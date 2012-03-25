@@ -20,7 +20,7 @@ module Helpers
   # The control script immediately after the <head> tag.
   #
   #
-  # Page sections scripts
+  # Page Sections Scripts
   # ---------------------------------------
   # The page sections script is used to mark
   # the elements that will be varied during the experiment.
@@ -46,12 +46,12 @@ module Helpers
   # = link_to (multi_begin_section('Headline') + "Welcome" + multi_end_section)
   #
   #
-  # OnClick Conversion  
+  # OnClick Conversion
   # ---------------------------------------
   # You'll need to add a snippet of text to the link or links
   # that you want to track as a conversion. Let's say your link
   # looks like this:
-  # 
+  #
   # <a href="http://www.example.com/promotion">Featured Products</a>
   #
   # To count a conversion when this link is clicked, add:
