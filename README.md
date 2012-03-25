@@ -10,7 +10,7 @@ The control script goes on your test page and makes sure that the experiment var
 
 The tracking script goes on your test page ensures that visits to the page are recorded in the experiment.
 
-The control script immediately after the <pre><code><head></code></pre> tag.
+The control script immediately after the head tag.
 
     mv_head(k, ua, pv)
 
